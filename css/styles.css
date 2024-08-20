@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: auto;
+    background-color: #f8f8f8;
+}
+
+
+header {
+    background: #8B0000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+nav {
+    background: #A52A2A;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+
+.section {
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    background: #8B0000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.containertext {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.container img {
+    display: inline-block;
+}
+
+.containertitulo {
+    text-align: center;
+    font-size: 30px;
+
+
+
+}
+
+.videoconta {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.contenimg {
+
+    margin: 100%;
+}
+
+
+.flexsection {
+
+    height: 600px;
+    width: 800px;
+    border: solid 1px black;
+    display: flex;
+
+}
+
+body {
+    background-image: '../imagenes/fondoinvierno.jpg';
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img1 {
+
+    width: 200px; 
+    height: 200; 
+    border-radius: 50%; 
+    overflow: hidden;
+
+}
+
+
+.carousel {
+        width: 100%;
+        max-width: 600px; /* Tamaño máximo del carrusel */
+        overflow: hidden;
+      }
+
+
+      
+.carouselimg {
+        width: 100%; /* Las imágenes ocuparán el 100% del ancho del carrusel */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Ajusta la imagen al contenedor, cortando los bordes si es necesario */
+      }
+  
+      
+
+.menuhori {
+    list-style: none;  /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Alinea los elementos al centro */
+      }
+      
+
+
+
+
+ 
+codigo imagen style="width: 100%; height: auto; border-radius: 50%;" 
