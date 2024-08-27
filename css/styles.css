@@ -40,7 +40,7 @@ nav a {
 
 main {
 
-    padding: 2rem;
+    /* padding: 2rem;  */
     margin-bottom: 20px;
     padding-bottom: 20px; 
     
@@ -145,12 +145,13 @@ footer {
       
 
 .menuhori {
+  
     list-style: none;  /* Elimina los puntos de la lista */
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;  /* Alinea los elementos al centro */
-      
+    
 }
 
 
@@ -173,7 +174,7 @@ h1 {
 section h3 {
 
     font-size: 25px;
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', 'Courier', 'monospace';
     color:rgb(20, 31, 240)
 }
 
@@ -183,12 +184,41 @@ div p {
   font-size: 20px;
   color: #620d0d;
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  z-index: 1000; /* Asegura que el navbar esté encima de otros contenidos */
+}
+
+.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+}
+
+
+.descrip-page {
+
+
+  background-color: rgb(248, 248, 248,0.5);
+  padding: 50px;
+
+  color: #8B0000;
+
+
+
+}
       
 
-
-
-
-codigo imagen style= "width: 100%; height: auto; border - radius: 50%;" 
 
 
 /* Estilos generales */
