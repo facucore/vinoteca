@@ -41,6 +41,9 @@ nav a {
 main {
 
     padding: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px; 
+    
 }
 
 
@@ -51,14 +54,15 @@ main {
 
 
 footer {
-
-    background: #8B0000;
-    color: #fff;
-    text-align: center;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background: #8B0000;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px; /* Espacio adicional encima del footer */
+  
 }
 
 
@@ -224,6 +228,14 @@ codigo imagen style= "width: 100%; height: auto; border - radius: 50%;"
   .videoconta iframe {
     width: 400px;
     height: 400px;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1rem; /* Espacio entre las tarjetas */
+    padding: 1rem;
   }
   
   /* Media Queries para pantallas Celulares */
