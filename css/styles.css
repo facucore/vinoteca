@@ -155,6 +155,7 @@ footer {
     margin: 0;
     display: flex;
     justify-content: center;  /* Alinea los elementos al centro */
+    text-align: center;
     
 }
 
@@ -172,6 +173,12 @@ h1 {
     color: black;
 }
 
+h2 {
+
+  text-decoration: underline;
+
+}
+
 
 
 
@@ -186,7 +193,7 @@ div p {
 
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  color: #620d0d;
+  color: #050505;
 }
 
 .navbar {
