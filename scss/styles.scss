@@ -1,9 +1,20 @@
+
+$font-primary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$background-color: #f8f8f8;
+$background-image-url: '../imagenes/fondogrisnegro.jpg';
+$color-blanco: #fff;
+$color-header: #8B0000;
+$color-nav: #333;
+$color-text: black;
+$color-footer-bg: #8B0000;
+$font-secondary: 'Times New Roman', Times, serif;
+
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: $font-primary;
   margin: 0;
   padding: auto;
-  background-color: #f8f8f8;
-  background-image: url("../imagenes/fondogrisnegro.jpg");
+  background-color: $background-color;
+  background-image: url($background-image-url);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,35 +22,39 @@ body {
 }
 
 header {
-  background: #8B0000;
-  color: #fff;
+  background: $color-header;
+  color: $color-blanco;
   padding: 10px;
   text-align: center;
-}
-header img {
-  max-width: 100%;
-  height: auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 nav {
-  background: #333;
+  background: $color-nav;
   padding: 1rem;
   text-align: center;
-}
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  margin: 0 15px;
+
+  a {
+    color: $color-blanco;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 15px;
+    }
+  }
 }
 
 main {
@@ -56,8 +71,8 @@ footer {
   padding: 15px 30px;
   font-size: 16px;
   margin-top: 30px;
-  background-color: #8B0000;
-  color: #fff;
+  background-color: $color-footer-bg;
+  color: $color-blanco;
   text-align: center;
 }
 
@@ -81,10 +96,11 @@ footer {
   display: grid;
   place-items: center;
   height: 100vh;
-}
-.videoconta iframe {
-  width: 400px;
-  height: 400px;
+
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 .contenimg {
@@ -110,13 +126,14 @@ footer {
   width: 100%;
   max-width: 600px;
   overflow: hidden;
-}
-.carouselimg {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
+
+  &img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .menuhori {
@@ -126,18 +143,21 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-}
-.menuhori li {
-  margin: 5px;
-}
-.menuhori a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-}
-.menuhori a:hover {
-  background-color: #555;
+
+  li {
+    margin: 5px;
+  }
+
+  a {
+    color: $color-blanco;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
 }
 
 .tipotitu1 {
@@ -147,9 +167,9 @@ footer {
 }
 
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: $font-secondary;
   font-size: 50px;
-  color: black;
+  color: $color-text;
 }
 
 h2 {
@@ -158,12 +178,12 @@ h2 {
 
 section h3 {
   font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   color: rgb(20, 31, 240);
 }
 
 div p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: #050505;
 }
@@ -172,22 +192,25 @@ div p {
   position: sticky;
   top: 0;
   background-color: #333;
-  color: #fff;
+  color: $color-blanco;
   z-index: 1000;
-}
-.navbar nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .descrip-page {
   background-color: rgba(248, 248, 248, 0.5);
   padding: 50px;
   font-weight: bold;
-  color: #8B0000;
+  color: $color-header;
 }
 
 .grid-container {
@@ -197,23 +220,27 @@ div p {
   padding: 1rem;
 }
 
+
+
 @media (max-width: 600px) {
   .menuhori {
     flex-direction: column;
     text-align: center;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      padding: 15px;
+    }
   }
-  .menuhori li {
-    margin: 0;
-  }
-  .menuhori a {
-    padding: 15px;
-  }
+
   .containertitulo {
     font-size: 1.5em;
   }
+
   .containertext {
     font-size: 1em;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
