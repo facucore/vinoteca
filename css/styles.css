@@ -1,7 +1,7 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
-  padding: auto;
+  padding: 0;
   background-color: #f8f8f8;
   background-image: url("../imagenes/fondogrisnegro.jpg");
   background-size: cover;
@@ -16,6 +16,7 @@ header {
   padding: 10px;
   text-align: center;
 }
+
 header img {
   max-width: 100%;
   height: auto;
@@ -26,11 +27,13 @@ nav {
   padding: 1rem;
   text-align: center;
 }
+
 nav a {
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -38,8 +41,11 @@ nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   margin: 0 15px;
+  width: 100px;
+  height: 100px;
 }
 
 main {
@@ -49,6 +55,14 @@ main {
 
 .section {
   margin-bottom: 1rem;
+}
+
+h3 {
+  border: 2px solid black;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 footer {
@@ -82,19 +96,21 @@ footer {
   place-items: center;
   height: 100vh;
 }
+
 .videoconta iframe {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .contenimg {
-  margin: 100%;
+  margin: 0;
 }
 
 .flexsection {
   height: 400px;
   width: 100%;
-  border: solid 1px black;
+  border: solid 1px rgb(170, 23, 141);
   display: flex;
   justify-content: center;
 }
@@ -111,6 +127,7 @@ footer {
   max-width: 600px;
   overflow: hidden;
 }
+
 .carouselimg {
   width: 100%;
   height: auto;
@@ -124,18 +141,24 @@ footer {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.menuhori li {
+  margin: 10px;
+  padding: 10px;
   text-align: center;
 }
-.menuhori li {
-  margin: 5px;
-}
+
 .menuhori a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
   display: block;
+  padding: 5px 10px;
 }
+
 .menuhori a:hover {
   background-color: #555;
 }
@@ -159,7 +182,8 @@ h2 {
 section h3 {
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
-  color: rgb(20, 31, 240);
+  color: #8B0000;
+  padding: 50px;
 }
 
 div p {
@@ -174,46 +198,130 @@ div p {
   background-color: #333;
   color: #fff;
   z-index: 1000;
-}
-.navbar nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+  border: 2px solid rgb(11, 11, 11);
+  padding: 10px 20px;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
 }
 
-.descrip-page {
-  background-color: rgba(248, 248, 248, 0.5);
-  padding: 50px;
-  font-weight: bold;
-  color: #8B0000;
+.navbar-nav .nav-link {
+  color: #fff;
+  text-decoration: none;
 }
 
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="%23FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+}
+/* Contenedor de tarjetas en cuadrícula */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el número de columnas según el tamaño disponible */
+  gap: 1rem; /* Espacio entre las tarjetas */
   padding: 1rem;
 }
 
-@media (max-width: 600px) {
+/* Estilo para las tarjetas */
+.card {
+  background: #ec2727; /* Fondo blanco para las tarjetas */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  overflow: hidden; /* Evita que el contenido se desborde */
+  transition: transform 0.3s ease; /* Animación suave al pasar el ratón */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-img-top {
+  width: 100%; /* Imagen ocupa el 100% del ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+  padding: 1rem; /* Espacio interno */
+}
+
+/* Estilo para el texto dentro de la tarjeta */
+.card-text {
+  font-size: 0.875rem; /* Tamaño de fuente ajustado */
+  color: #333; /* Color de texto oscuro */
+}
+
+/* Efecto al pasar el ratón por encima de la tarjeta */
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+}
+
+
+@media (max-width: 676px) {
+  nav {
+    padding: 0.5rem;
+  }
+
   .menuhori {
     flex-direction: column;
     text-align: center;
   }
+
   .menuhori li {
-    margin: 0;
+    margin: 5px 0;
+    width: 100%; /* Ocupará todo el ancho */
   }
+
   .menuhori a {
-    padding: 15px;
+    padding: 10px;
+    display: block;
+    width: 100%;
   }
+
   .containertitulo {
     font-size: 1.5em;
   }
+
   .containertext {
     font-size: 1em;
   }
+
+  .videoconta iframe {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* Cambia el color del icono del menú hamburguesa */
+@media (max-width: 676px) {
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="%23FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
+  }
+
+  .navbar-toggler {
+    border-color: ec2727; /* Cambia el color del borde del botón */
+  }
+
+  .navbar-nav .nav-link {
+    color: #ec2727; /* Cambia el color de los enlaces del menú */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #8B0000; /* Cambia el color cuando se pasa el ratón por encima */
+  }
+
+  .navbar-collapse {
+    background-color: #333; /* Cambia el color de fondo del menú desplegable */
+  }
 }
 
-/*# sourceMappingURL=styles.css.map */
