@@ -109,6 +109,14 @@ footer {
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
 }
+.containertitulo2 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+  color: #cf0f0f;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10); /* Ajusta estos valores para controlar el difuminado */
+}
+
 .flexsection {
   height: 400px;
   width: 100%;
