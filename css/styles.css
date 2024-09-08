@@ -1,8 +1,8 @@
-/* Estilos generales */
+/* Estilos del cuerpo */
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: auto;
   background-color: #f8f8f8;
   background-image: url("../imagenes/fondogrisnegro.jpg");
   background-size: cover;
@@ -11,32 +11,24 @@ body {
   min-height: 100vh;
 }
 
-/* Encabezado */
+/* Estilos del encabezado */
 header {
-  background: #8b0000;
+  background: #8B0000;
   color: #fff;
   padding: 10px;
   text-align: center;
 }
-
 header img {
   max-width: 100%;
   height: auto;
 }
 
-/* Navegación */
+/* Estilos de navegación */
 nav {
   background: #333;
   padding: 1rem;
   text-align: center;
 }
-
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none;
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -44,78 +36,84 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-
 nav ul li {
   margin: 0 15px;
-  width: 200px;
-  height: 100px;
+}
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
 }
 
-/* Secciones principales */
+/* Estilos del contenedor de video */
+.videoconta {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.videoconta iframe {
+  width: 400px;
+  height: 400px;
+}
+
+/* Estilos del formulario */
+#colorformulario {
+  color: #8B0000; /* Cambia a tu color deseado */
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del contenido principal */
 main {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
+/* Estilos de las secciones */
 .section {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
+  margin-bottom: 1rem;  
 }
 
-/* Títulos y textos */
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  color: black;
-}
-
-h2 {
-  text-decoration: underline;
-}
-
-h3 {
-  border: 2px solid black;
-  padding: 20px;
-  width: 100%;
-  height: auto;
+/* Estilos del pie de página */
+footer {
+  height: 80px;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-top: 30px;
+  background-color: #8B0000;
+  color: #fff;
   text-align: center;
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
-  color: #8b0000;
-  padding: 50px;
 }
 
+/* Estilos de texto y contenedores */
 .containertext {
   text-align: center;
   font-size: 25px;
   margin: 10px 0;
 }
 
+.container img {
+  display: inline-block;
+}
+
 .containertitulo {
   text-align: center;
   font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-div p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
-  color: #050505;
-}
-
-/* Estilos de video */
-.videoconta iframe {
-  width: 1000px;
-  max-width: 800px;
-  height: 390px;
+.flexsection {
+  height: 400px;
+  width: 100%;
+  border: solid 1px black;
   display: flex;
-    justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
 }
 
-/* Imágenes y carrusel */
 .img1 {
   width: 200px;
   height: 200px;
@@ -128,7 +126,6 @@ div p {
   max-width: 600px;
   overflow: hidden;
 }
-
 .carouselimg {
   width: 100%;
   height: auto;
@@ -137,238 +134,176 @@ div p {
   justify-content: center;
 }
 
-/* Flexbox */
-.flexsection {
-  height: 400px;
-  width: 100%;
-  border: solid 1px rgb(170, 23, 141);
-  display: flex;
-  justify-content: center;
-}
-
-/* Menú horizontal */
 .menuhori {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-  width: 100%;
 }
-
 .menuhori li {
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
+  margin: 5px;
 }
-
 .menuhori a {
   color: #fff;
   text-decoration: none;
+  padding: 10px 20px;
   display: block;
-  padding: 5px 10px;
 }
-
 .menuhori a:hover {
   background-color: #555;
 }
 
-/* Tarjetas */
+/* Estilos de títulos */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  color: #8B0000;
+}
+
+section h3 {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(20, 31, 240);
+}
+
+div p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #050505;
+}
+
+/* Estilos de la barra de navegación personalizada */
+.custom-navbar {
+  background-color: #343a40; /* Cambia a tu color deseado */
+}
+.custom-navbar .nav-link {
+  color: #ffffff; /* Cambia el color del texto de los enlaces */
+}
+.custom-navbar .navbar-brand {
+  color: #ffffff; /* Cambia el color del texto de la marca */
+}
+
+/* Estilos de contenedores flexibles y de contenido */
+.content-wrapper {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Opcional: centra horizontalmente los elementos en su contenedor */
+  gap: 20px; /* Espacio entre el párrafo y el video, ajusta según sea necesario */
+  padding: 20px; /* Añadir espacio alrededor del contenedor */
+}
+
+.text-container {
+  flex: 1; /* Permite que el contenedor de texto tome el espacio restante */
+  background-color: #f8f9fa; /* Color de fondo claro para destacar el texto */
+  border: 1px solid #dee2e6; /* Borde sutil alrededor del contenedor de texto */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno alrededor del texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+  max-width: 500px; /* Ajusta el ancho máximo del contenedor de texto */
+}
+
+.videoconta {
+  flex: 1; /* Permite que el contenedor de video tome el espacio restante */
+}
+iframe {
+  width: 100%;
+  height: 315px; /* Ajusta la altura del video, cambia según sea necesario */
+  border-radius: 8px; /* Bordes redondeados del video */
+}
+
+/* Estilos de descripción de página */
+.descrip-page {
+  background-color: rgba(248, 248, 248, 0.5);
+  padding: 50px;
+  font-weight: bold;
+  color: #8B0000;
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  border: 1px solid #dee2e6; /* Borde alrededor del h3 */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+  max-width: 800px; /* Ajusta el ancho máximo del h3 si es necesario */
+  margin: 20px auto; /* Centra el h3 y añade espacio arriba y abajo */
+  font-size: 16px; /* Tamaño de fuente adecuado */
+}
+
+/* Fondo difuminado con pseudo-elemento */
+.descrip-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Fondo negro semi-transparente */
+  z-index: -1; /* Envía el pseudo-elemento al fondo */
+  border-radius: 8px; /* Bordes redondeados del fondo difuminado */
+}
+
+/* Estilos de la cuadrícula */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 1rem;
   padding: 1rem;
-  display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-            gap: 20px; /* Espacio entre las tarjetas */
-            padding: 20px;
 }
 
-.card {
-  background: #ec2727;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.card-img-top {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-}
-
-.card-body {
-  padding: 1rem;
-  padding: 15px;
-}
-
-.card-text {
-  font-size: 0.875rem;
-  color: #333;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* Formulario */
-#colorformulario {
-  color: #0a0000;
-}
-
-/* Dias Y Horarios */
+/* Estilos de horarios */
 .horarios {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-.horarios h2 {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #333;
-}
-.horarios ul {
-  list-style: none;
-  padding: 0;
-}
-.horarios li {
-  background-color: #f2f2f2;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-}
-
-
-/* Navbar */
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: #333;
-  color: #fff;
-  z-index: 1000;
-  border: 5px solid rgb(11, 11, 11);
-  padding: 15px 10px;
-  width: 100%;
-  height: 100px;
-  box-sizing: border-box;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.navbar-nav .nav-item {
-  margin: 0 15px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="%23FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
-}
-
-/* Footer */
-footer {
-  height: 80px;
-  padding: 15px 30px;
-  font-size: 16px;
-  margin-top: 30px;
-  background-color: #8b0000;
-  color: #fff;
-  text-align: center;
-  border: 2px solid black;
 }
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #25D366; /* Color de fondo de WhatsApp */
   border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 .whatsapp-button img {
-  width: 50px;
-  height: 50px;
+  width: 50px; /* Tamaño del ícono */
+  height: 50px; /* Tamaño del ícono */
+  border-radius: 50%;
 }
 
-/* Media queries */
-@media (max-width: 700px) {
-  nav {
-    padding: 0.5rem;
-  }
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Color de fondo en hover */
+}
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 700px) {
   .menuhori {
     flex-direction: column;
     text-align: center;
   }
-
   .menuhori li {
-    margin: 5px 0;
-    width: 100%;
+    margin: 0;
   }
-
   .menuhori a {
-    padding: 10px;
-    display: block;
-    width: 100%;
+    padding: 15px;
   }
-
   .containertitulo {
     font-size: 1.5em;
   }
-
   .containertext {
     font-size: 1em;
   }
-
-  .videoconta iframe {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  footer {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="%23FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>');
-  }
-
-  .navbar-nav .nav-link {
-    color: #ec2727;
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: #8b0000;
-  }
-
-  .navbar-collapse {
-    background-color: #333;
-  }
 }
 
+/*# sourceMappingURL=styles.css.map */

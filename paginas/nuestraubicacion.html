@@ -23,44 +23,41 @@
             <div>          
                 <img src="../imagenes/images.png" alt="logo" class="img1">
             </div>
-            <!-- Botón de WhatsApp -->
-            <a href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20obtener%20más%20información." class="whatsapp-button" target="_blank">
-                <img src="../imagenes/whatsapp.png" alt="WhatsApp">
-            </a>
+
+        </section>
+        <section>
+            <!-- Navbar de Bootstrap -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Vinoteca Rindel</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nuestrosvinos.html">Nuestros Vinos</a>
+                      </li>
+                      <li class="nav-item"></li>
+                        <a class="nav-link" href="./nuestraubicacion.html">Nuesta Ubicacion</a>
+                      </li>
+                      <li class="nav-item"></li>
+                        <a class="nav-link" href="./contacto.html">Nuestros Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </section>
     </header>
     <main>
-        <section>
-            <!-- Navbar de Bootstrap -->
-            <nav class="navbar navbar-expand-md">
-                <div class="container-fluid">
-                    <!-- Botón hamburguesa para pantallas pequeñas -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>  
-                    <!-- Menú que será colapsado en pantallas pequeñas -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuhori">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nuestrosvinos.html">Nuestros Vinos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nuestraubicacion.html">Nuestra Ubicación</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
+        
         <!-- link goolemaps -->       
         <section id="inicio">           
             <h2 class="containertitulo">Nuestra Ubicacion</h2>
@@ -91,5 +88,14 @@
                         </p>
                     </div>           
         </section>
-    </footer></body>
+    </footer>
+        <!-- Botón de WhatsApp flotante -->
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
 </html>

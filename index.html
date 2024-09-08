@@ -14,74 +14,83 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
+
+    <!-- Encabezado -->
     <header>
         <section>
             <h1>VINOTECA RINDEL</h1>
         </section>
+
         <section>
             <!-- LOGO PRINCIPAL -->
-            <div>         
+            <div>
                 <img src="./imagenes/images.png" alt="logo" class="img1">
             </div>
-            <!-- Botón de WhatsApp -->
-            <a href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20obtener%20más%20información." class="whatsapp-button" target="_blank">
-                <img src="./imagenes/whatsapp.png" alt="WhatsApp" class="img1">
-            </a>
+
+        </section>
+
+        <section>
+            <!-- Navbar de Bootstrap -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Vinoteca Rindel</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/sobrenosotros.html">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/nuestrosvinos.html">Nuestros Vinos</a>
+                      </li>
+                      <li class="nav-item"></li>
+                        <a class="nav-link" href="./paginas/nuestraubicacion.html">Nuesta Ubicacion</a>
+                      </li>
+                      <li class="nav-item"></li>
+                        <a class="nav-link" href="./paginas/contacto.html">Nuestros Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </section>
     </header>
 
+    <!-- Contenido principal -->
     <main>
-             <section>
-                    <!-- Navbar de Bootstrap -->
-                    <nav class="navbar navbar-expand-md">
-                        <div class="container-fluid">
-                            <!-- Botón hamburguesa para pantallas pequeñas -->
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                    
-                            <!-- Menú que será colapsado en pantallas pequeñas -->
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav menuhori mx-auto"> <!-- Añadir 'mx-auto' para centrado -->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./index.html">Inicio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./paginas/nuestrosvinos.html">Nuestros Vinos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./paginas/sobrenosotros.html">Sobre Nosotros</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./paginas/nuestraubicacion.html">Nuestra Ubicación</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    
-                </section>
+        <!-- Sección de bienvenida -->
+        <section id="inicio">
+            <h2 class="containertitulo">Bienvenido a Vinoteca Rindel</h2>
+            <h3 class="descrip-page">Descubre nuestra exclusiva selección de vinos de las mejores bodegas del mundo. Desde vinos tintos robustos hasta blancos frescos y espumosos elegantes, tenemos algo para cada paladar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime mollitia accusantium, cumque odit officia temporibus, reiciendis quaerat nobis, rerum excepturi! Illo error fuga vel necessitatibus dolorum aspernatur cum itaque.</h3>
+        </section>
 
-                <section id="inicio">
-                    <h2 class="containertitulo">Bienvenido a Vinoteca Rindel</h2>
-                    <h3 class="descrip-page">Descubre nuestra exclusiva selección de vinos de las mejores bodegas del mundo. Desde vinos tintos robustos hasta blancos 
-                        frescos y espumosos elegantes, tenemos algo para cada paladar.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime mollitia accusantium, cumque odit officia temporibus,
-                        reiciendis quaerat nobis, rerum excepturi! Illo error fuga vel necessitatibus dolorum aspernatur cum itaque.</h3>                   
-                </section>
+        <!-- Sección de video -->
+        <section class="section">
+            <div class="content-wrapper">
+                <div class="text-container">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores commodi, non repellendus,
+                      quidem excepturi, fuga ab in optio vero cumque maxime a ullam voluptatum 
+                      iusto iure exercitationem laborum qui. Nisi!</p>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt assumenda tempora iure quia 
+                        odit consequuntur repudiandae suscipit? 
+                        Ratione doloremque et nisi eveniet beatae dolorum sint qui fugiat, molestias cum repellat!</p>
+                </div>
+                <div class="videoconta">
+                    <iframe src="https://www.youtube.com/embed/vn-B237Gops?si=-2ijHclkh1Tw92kI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
 
-                <section class="section">
-                    <div class="videoconta">
-                        <iframe src="https://www.youtube.com/embed/vn-B237Gops?si=-2ijHclkh1Tw92kI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </section>
-                                                    <!-- carroulse-->
-                <section class="section">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+        <!-- Carrusel de imágenes -->
+        <section class="section">
+            <div class="container text-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./imagenes/bodegaviñedo1.jpg" class="d-block w-100" alt="viñedo1">
                         </div>
@@ -91,24 +100,34 @@
                         <div class="carousel-item">
                             <img src="./imagenes/bodegaviñedo3.jpg" class="d-block w-100" alt="viñedo3">
                         </div>
-                        <div class="carousel-item"></div>
+                        <div class="carousel-item">
                             <img src="./imagenes/bodegaviñedo4.jpg" class="d-block w-100" alt="viñedo4">
                         </div>
-                        </div>
                     </div>
-                </section>               
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Pie de página -->
     <footer>
         <section>
             <div>
-                
-                <img src="./imagenes/pngwing.com.png" alt="instagram" width="25" height="25 ">
-                <a href="http://instagram.com" target="_blank">Instagram</a> 
+                <img src="./imagenes/pngwing.com.png" alt="instagram" width="25" height="25">
+                <a href="http://instagram.com" target="_blank">Instagram</a>
                 <p>&copy; 2024 Vinoteca Rindel</p>
-            </div>  
-                     
+                
+            </div>
+            
         </section>
     </footer>
+
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
