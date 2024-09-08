@@ -1,4 +1,5 @@
 /* Estilos del cuerpo */
+/* Estilos generales */
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
@@ -21,6 +22,7 @@ header {
 header img {
   max-width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 /* Estilos de navegación */
@@ -58,7 +60,7 @@ nav a {
 
 /* Estilos del formulario */
 #colorformulario {
-  color: #8B0000; /* Cambia a tu color deseado */
+  color: #8B0000;
   font-family: "Arial", sans-serif;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.7);
@@ -75,6 +77,10 @@ main {
 
 /* Estilos de las secciones */
 .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
   margin-bottom: 1rem;  
 }
 
@@ -95,17 +101,14 @@ footer {
   font-size: 25px;
   margin: 10px 0;
 }
-
 .container img {
   display: inline-block;
 }
-
 .containertitulo {
   text-align: center;
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
 }
-
 .flexsection {
   height: 400px;
   width: 100%;
@@ -114,17 +117,16 @@ footer {
   justify-content: center;
 }
 
-.img1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
+/* Estilos del carrusel */
 .carousel {
+  flex: 2;
   width: 100%;
   max-width: 600px;
   overflow: hidden;
+}
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
 }
 .carouselimg {
   width: 100%;
@@ -134,6 +136,7 @@ footer {
   justify-content: center;
 }
 
+/* Estilos del menú horizontal */
 .menuhori {
   list-style: none;
   padding: 0;
@@ -161,19 +164,18 @@ h1 {
   font-size: 50px;
   color: black;
 }
-
 h2 {
   text-decoration: underline;
   font-family: "Times New Roman", Times, serif;
   color: #8B0000;
 }
-
 section h3 {
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
   color: rgb(20, 31, 240);
 }
 
+/* Estilos del texto en div */
 div p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
@@ -182,41 +184,39 @@ div p {
 
 /* Estilos de la barra de navegación personalizada */
 .custom-navbar {
-  background-color: #343a40; /* Cambia a tu color deseado */
+  background-color: #343a40;
 }
 .custom-navbar .nav-link {
-  color: #ffffff; /* Cambia el color del texto de los enlaces */
+  color: #ffffff;
 }
 .custom-navbar .navbar-brand {
-  color: #ffffff; /* Cambia el color del texto de la marca */
+  color: #ffffff;
 }
 
 /* Estilos de contenedores flexibles y de contenido */
 .content-wrapper {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: center; /* Opcional: centra horizontalmente los elementos en su contenedor */
-  gap: 20px; /* Espacio entre el párrafo y el video, ajusta según sea necesario */
-  padding: 20px; /* Añadir espacio alrededor del contenedor */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
-
 .text-container {
-  flex: 1; /* Permite que el contenedor de texto tome el espacio restante */
-  background-color: #f8f9fa; /* Color de fondo claro para destacar el texto */
-  border: 1px solid #dee2e6; /* Borde sutil alrededor del contenedor de texto */
-  border-radius: 8px; /* Bordes redondeados */
-  padding: 20px; /* Espacio interno alrededor del texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
-  max-width: 500px; /* Ajusta el ancho máximo del contenedor de texto */
+  flex: 1;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
 }
-
 .videoconta {
-  flex: 1; /* Permite que el contenedor de video tome el espacio restante */
+  flex: 1;
 }
 iframe {
   width: 100%;
-  height: 315px; /* Ajusta la altura del video, cambia según sea necesario */
-  border-radius: 8px; /* Bordes redondeados del video */
+  height: 315px;
+  border-radius: 8px;
 }
 
 /* Estilos de descripción de página */
@@ -225,17 +225,15 @@ iframe {
   padding: 50px;
   font-weight: bold;
   color: #8B0000;
-  position: relative; /* Necesario para posicionar el pseudo-elemento */
-  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
-  border: 1px solid #dee2e6; /* Borde alrededor del h3 */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
-  max-width: 800px; /* Ajusta el ancho máximo del h3 si es necesario */
-  margin: 20px auto; /* Centra el h3 y añade espacio arriba y abajo */
-  font-size: 16px; /* Tamaño de fuente adecuado */
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 16px;
 }
-
-/* Fondo difuminado con pseudo-elemento */
 .descrip-page::before {
   content: "";
   position: absolute;
@@ -243,9 +241,9 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1); /* Fondo negro semi-transparente */
-  z-index: -1; /* Envía el pseudo-elemento al fondo */
-  border-radius: 8px; /* Bordes redondeados del fondo difuminado */
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  border-radius: 8px;
 }
 
 /* Estilos de la cuadrícula */
@@ -265,6 +263,8 @@ iframe {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
+/* Estilos del botón de WhatsApp */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -275,17 +275,19 @@ iframe {
   padding: 10px;
   z-index: 1000;
 }
-
 .whatsapp-button img {
-  width: 50px; /* Tamaño del ícono */
-  height: 50px; /* Tamaño del ícono */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
-
 .whatsapp-button:hover {
-  background-color: #128C7E; /* Color de fondo en hover */
+  background-color: #128C7E;
 }
 
+/* Estilos de imagen redondeada */
+.image-container img {
+  border-radius: 15px;
+}
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 700px) {
@@ -308,3 +310,4 @@ iframe {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
