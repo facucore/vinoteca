@@ -195,11 +195,40 @@ div p {
   background-color: #343a40;
 }
 .custom-navbar .nav-link {
-  color: #ffffff;
+  color: #8B0000;
 }
 .custom-navbar .navbar-brand {
-  color: #ffffff;
+  color: #8B0000;
 }
+/* Cambia el color y tipografía del navbar */
+.navbar {
+  background-color: #343a40;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-brand {
+  color: #8B0000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-nav .nav-link {
+  color: #8B0000;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-nav .nav-link.active {
+  color: #8B0000;
+}
+
+.navbar-toggler {
+  border-color: #8B0000;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...');
+}
+
 
 /* Estilos de contenedores flexibles y de contenido */
 .content-wrapper {
@@ -232,7 +261,7 @@ iframe {
   background-color: rgba(248, 248, 248, 0.5);
   padding: 50px;
   font-weight: bold;
-  color: #8B0000;
+  color: #080808;
   position: relative;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #dee2e6;
