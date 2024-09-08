@@ -286,6 +286,7 @@ iframe {
   background-color: #128C7E; /* Color de fondo en hover */
 }
 
+
 /* Estilos para pantallas pequeñas */
 @media (max-width: 700px) {
   .menuhori {

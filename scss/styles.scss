@@ -3,7 +3,7 @@ $font-primary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $background-color: #f8f8f8;
 $background-image-url: '../imagenes/fondogrisnegro.jpg';
 $color-blanco: #fff;
-$color-header: #8B0000;
+$color-header: #8b005a;
 $color-nav: #333;
 $color-text: black;
 $color-footer-bg: #8B0000;
@@ -218,6 +218,56 @@ div p {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 1rem;
   padding: 1rem;
+}
+section {
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px; // Espacio entre texto e imagen
+  margin-bottom: 20px; // Espacio entre bloques de contenido
+
+  .text-container {
+    flex: 1; // Permite que el contenedor de texto tome el espacio restante
+    background-color: #f8f9fa; // Color de fondo claro para destacar el texto
+    border: 1px solid #dee2e6; // Borde sutil alrededor del contenedor de texto
+    border-radius: 8px; // Bordes redondeados
+    padding: 20px; // Espacio interno alrededor del texto
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra sutil para darle profundidad
+    max-width: 500px; // Ajusta el ancho máximo del contenedor de texto
+  }
+
+  .image-container {
+    flex: 1; // Permite que el contenedor de imagen tome el espacio restante
+
+    img {
+      width: 100%; // Asegura que la imagen se ajuste al contenedor
+      height: auto; // Mantiene la proporción de la imagen
+      border-radius: 8px; // Bordes redondeados de la imagen
+    }
+  }
+}
+
+.containertitulo {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+
+.descrip-page {
+  background-color: rgba(248, 248, 248, 0.5);
+  padding: 20px;
+  font-weight: bold;
+  color: #8B0000;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto; // Centra el contenido
+  font-size: 16px;
 }
 
 
