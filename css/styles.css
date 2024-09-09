@@ -283,12 +283,15 @@ iframe {
 
 /* Horarios */
 .horarios {
+  width: 400px;
+  border: 1px solid #ccc;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 0 auto;
 }
 .horarios ul {
   list-style-type: none;
