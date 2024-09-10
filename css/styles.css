@@ -371,3 +371,118 @@ iframe {
     font-size: 1em;
   }
 }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+}
+
+/* Navbar de Bootstrap */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 0 15px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para las secciones de texto y imagen */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 700px) {
+    /* Ajusta el encabezado */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    /* Ajusta la navbar */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta el tamaño de las imágenes en el carrusel */
+    .carousel-inner img {
+        height: auto;
+    }
+
+    /* Ajusta el diseño del contenido */
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-container, .image-container {
+        width: 100%;
+    }
+
+    /* Ajusta el pie de página */
+    footer {
+        font-size: 0.9em;
+    }
+
+    /* Ajusta el botón de WhatsApp */
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
