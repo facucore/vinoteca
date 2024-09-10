@@ -424,6 +424,26 @@ footer {
     width: 30px;
     height: 30px;
 }
+/* Cambia la tipografía y el color de la paginación */
+.pagination .page-link {
+  font-family: 'Arial', sans-serif;
+  color: #8B0000;
+  background-color: #f8f8f8;
+  border: 1px solid #8B0000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 25%;
+}
+
+.pagination .page-link:hover {
+  background-color: #8B0000;
+  color: white;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #8B0000;
+  border-color: #8B0000;
+  color: white;
+}
 
 /* Estilos responsivos */
 @media (max-width: 700px) {
