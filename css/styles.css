@@ -352,25 +352,7 @@ iframe {
   height: auto;
 }
 
-/* Estilos responsivos */
-@media (max-width: 700px) {
-  .menuhori {
-    flex-direction: column;
-    text-align: center;
-  }
-  .menuhori li {
-    margin: 0;
-  }
-  .menuhori a {
-    padding: 15px;
-  }
-  .containertitulo {
-    font-size: 1.5em;
-  }
-  .containertext {
-    font-size: 1em;
-  }
-}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -388,7 +370,7 @@ header img {
 
 /* Navbar de Bootstrap */
 .navbar {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* Estilos para el contenido principal */
@@ -485,4 +467,20 @@ footer {
         bottom: 15px;
         right: 15px;
     }
-}
+    .menuhori {
+      flex-direction: column;
+      text-align: center;
+    }
+    .menuhori li {
+      margin: 0;
+    }
+    .menuhori a {
+      padding: 15px;
+    }
+    .containertitulo {
+      font-size: 1.5em;
+    }
+    .containertext {
+      font-size: 1em;
+    }
+  }
