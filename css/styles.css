@@ -431,7 +431,6 @@ footer {
   background-color: #f8f8f8;
   border: 1px solid #8B0000;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 25%;
 }
 
 .pagination .page-link:hover {
@@ -444,6 +443,22 @@ footer {
   border-color: #8B0000;
   color: white;
 }
+/* Cambiar forma del botón */
+.btn-custom {
+  border-radius: 20px; /* Esto hace que el botón sea redondeado */
+  padding: 10px 20px; /* Ajustar el relleno interno */
+  background-color: #8B0000; /* Color de fondo */
+  border: none; /* Eliminar el borde */
+  color: rgb(9, 8, 8); /* Color del texto */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+.btn-custom:hover {
+  background-color: #cf0f0f; /* Cambiar color al pasar el mouse */
+}
+
+
 
 /* Estilos responsivos */
 @media (max-width: 700px) {
