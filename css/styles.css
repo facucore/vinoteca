@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
@@ -107,6 +107,8 @@ footer {
   text-align: center;
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  color: #8B0000;
 }
 .containertitulo2 {
   color: #cf0f0f;
@@ -303,26 +305,6 @@ iframe {
   margin-bottom: 8px;
 }
 
-/* Botón de WhatsApp */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  z-index: 1000;
-}
-.whatsapp-button img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.whatsapp-button:hover {
-  background-color: #128C7E;
-}
-
 /* Imagen redondeada */
 .image-container img {
   border-radius: 15px;
@@ -418,11 +400,17 @@ footer {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1000;
 }
 
 .whatsapp-button img {
-    width: 30px;
-    height: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.whatsapp-button:hover {
+  background-color: #128C7E;
 }
 /* Cambia la tipografía y el color de la paginación */
 .pagination .page-link {
@@ -431,6 +419,7 @@ footer {
   background-color: #f8f8f8;
   border: 1px solid #8B0000;
   transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 25%;
 }
 
 .pagination .page-link:hover {
@@ -443,22 +432,19 @@ footer {
   border-color: #8B0000;
   color: white;
 }
-/* Cambiar forma del botón */
 .btn-custom {
-  border-radius: 20px; /* Esto hace que el botón sea redondeado */
-  padding: 10px 20px; /* Ajustar el relleno interno */
-  background-color: #8B0000; /* Color de fondo */
-  border: none; /* Eliminar el borde */
-  color: rgb(9, 8, 8); /* Color del texto */
-  font-size: 16px; /* Tamaño de la fuente */
-  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  background-color: #cf0f0f;
+  color: rgb(12, 0, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .btn-custom:hover {
-  background-color: #cf0f0f; /* Cambiar color al pasar el mouse */
+  background-color: #8B0000; /* Color al pasar el mouse sobre el botón */
 }
-
-
 
 /* Estilos responsivos */
 @media (max-width: 700px) {
