@@ -1,47 +1,45 @@
-$font-primary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-$background-color: #f8f8f8;
-$background-image-url: '../imagenes/fondogrisnegro.jpg';
-$color-blanco: #fff;
-$color-header: #8B0000;
-$color-nav: #333;
-$color-text: black;
-$color-footer-bg: #8B0000;
-$font-secondary: 'Times New Roman', Times, serif;
+// Variables
+$primary-color: #8B0000;
+$secondary-color: #333;
+$text-color-light: #fff;
+$text-color-dark: #050505;
+$hover-color: #555;
+$background-color-light: #f8f8f8;
 
+@import "colores";
+
+// Estilos Generales
 body {
-  font-family: $font-primary;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
-  padding: auto;
-  background-color: $background-color;
-  background-image: url($background-image-url);
+  padding: 0; // Cambio de auto a 0 para evitar problemas
+  background-color: $background-color-light;
+  background-image: url("../imagenes/fondogrisnegro.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
 
+// Estilos del Encabezado
 header {
-  background: $color-header;
-  color: $color-blanco;
+  background: $primary-color;
+  color: $text-color-light;
   padding: 10px;
   text-align: center;
 
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
   }
 }
 
+// Estilos de Navegación
 nav {
-  background: $color-nav;
+  background: $secondary-color;
   padding: 1rem;
   text-align: center;
-
-  a {
-    color: $color-blanco;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
 
   ul {
     list-style: none;
@@ -53,44 +51,16 @@ nav {
     li {
       margin: 0 15px;
     }
+
+    a {
+      color: $text-color-light;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
   }
 }
 
-main {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.section {
-  margin-bottom: 1rem;
-}
-
-footer {
-  height: 80px;
-  padding: 15px 30px;
-  font-size: 16px;
-  margin-top: 30px;
-  background-color: $color-footer-bg;
-  color: $color-blanco;
-  text-align: center;
-}
-
-.containertext {
-  text-align: center;
-  font-size: 25px;
-  margin: 10px 0;
-}
-
-.container img {
-  display: inline-block;
-}
-
-.containertitulo {
-  text-align: center;
-  font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+// Contenedor de Video
 .videoconta {
   display: grid;
   place-items: center;
@@ -102,10 +72,69 @@ footer {
   }
 }
 
-.contenimg {
-  margin: 100%;
+// Estilos del Formulario
+#colorformulario {
+  color: $primary-color;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+// Estilos del Contenido Principal
+main {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+// Secciones Flexibles
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 1rem;  
+}
+
+// Pie de Página
+footer {
+  height: 80px;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-top: 30px;
+  background-color: $primary-color;
+  color: $text-color-light;
+  text-align: center;
+}
+
+// Textos y Contenedores
+.containertext {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.container {
+  img {
+    display: inline-block;
+  }
+}
+
+.containertitulo, .containertitulo2 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: $primary-color;
+
+  &.containertitulo2 {
+    color: #cf0f0f;
+  }
+}
+
+// Secciones Flexibles
 .flexsection {
   height: 400px;
   width: 100%;
@@ -114,19 +143,19 @@ footer {
   justify-content: center;
 }
 
-.img1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
+// Carrusel
 .carousel {
+  flex: 2;
   width: 100%;
   max-width: 600px;
   overflow: hidden;
 
-  &img {
+  .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carouselimg {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -135,6 +164,7 @@ footer {
   }
 }
 
+// Menú Horizontal
 .menuhori {
   list-style: none;
   padding: 0;
@@ -148,70 +178,136 @@ footer {
   }
 
   a {
-    color: $color-blanco;
+    color: $text-color-light;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
 
     &:hover {
-      background-color: #555;
+      background-color: $hover-color;
     }
   }
 }
 
-.tipotitu1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+// Títulos
 h1 {
-  font-family: $font-secondary;
+  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  color: $color-text;
+  color: black;
 }
 
 h2 {
   text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  color: $primary-color;
 }
 
 section h3 {
   font-size: 25px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: rgb(20, 31, 240);
 }
 
+// Textos en div
 div p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
-  color: #050505;
+  color: $text-color-dark;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: #333;
-  color: $color-blanco;
-  z-index: 1000;
+// Barra de Navegación Personalizada
+.custom-navbar, .navbar {
+  background-color: #343a40;
+  font-family: 'Arial', sans-serif;
 
-  nav {
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
+  .container-fluid, .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    .nav-item {
+      margin: 0 15px;
+    }
+
+    .nav-link {
+      color: $primary-color;
+      font-size: 16px;
+
+      &.active {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $primary-color;
+
+    .navbar-toggler-icon {
+      background-image: url('data:image/svg+xml,...');
     }
   }
 }
 
-.descrip-page {
-  background-color: rgba(248, 248, 248, 0.5);
-  padding: 50px;
-  font-weight: bold;
-  color: $color-header;
+// Contenedores Flexibles
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
+.text-container {
+  flex: 1;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+// Descripción de Página
+.descrip-page {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  font-weight: bold;
+  color: #080808;
+  position: relative;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    border-radius: 8px;
+  }
+}
+
+// Cuadrícula
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
@@ -219,8 +315,97 @@ div p {
   padding: 1rem;
 }
 
+// Horarios
+.horarios {
+  width: 400px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
 
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+// Imagen Redondeada
+.image-container {
+  img {
+    border-radius: 15px;
+  }
+}
+
+// Estilos de Tarjeta
+.card {
+  width: 18rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: white;
+  background: linear-gradient(0deg, rgba(195,51,34,0.91) 0%, rgba(253,45,86,0.82) 100%);
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Estilos Responsivos
 @media (max-width: 700px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .navbar-nav {
+    text-align: center;
+
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .carousel-inner img {
+    height: auto;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-container, .image-container {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
   .menuhori {
     flex-direction: column;
     text-align: center;

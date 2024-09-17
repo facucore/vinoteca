@@ -1,8 +1,7 @@
-
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
-  padding: auto;
+  padding: 0;
   background-color: #f8f8f8;
   background-image: url("../imagenes/fondogrisnegro.jpg");
   background-size: cover;
@@ -11,7 +10,6 @@ body {
   min-height: 100vh;
 }
 
-/* Estilos del encabezado */
 header {
   background: #8B0000;
   color: #fff;
@@ -24,7 +22,6 @@ header img {
   border-radius: 50%;
 }
 
-/* Estilos de navegación */
 nav {
   background: #333;
   padding: 1rem;
@@ -40,13 +37,12 @@ nav ul {
 nav ul li {
   margin: 0 15px;
 }
-nav a {
+nav ul a {
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
 }
 
-/* Contenedor de video */
 .videoconta {
   display: grid;
   place-items: center;
@@ -57,10 +53,9 @@ nav a {
   height: 400px;
 }
 
-/* Estilos del formulario */
 #colorformulario {
   color: #8B0000;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.7);
   padding: 5px;
@@ -68,22 +63,19 @@ nav a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos del contenido principal */
 main {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-/* Secciones flexibles */
 .section {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 10px;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
 }
 
-/* Pie de página */
 footer {
   height: 80px;
   padding: 15px 30px;
@@ -94,28 +86,27 @@ footer {
   text-align: center;
 }
 
-/* Textos y contenedores */
 .containertext {
   text-align: center;
   font-size: 25px;
   margin: 10px 0;
 }
+
 .container img {
   display: inline-block;
 }
+
 .containertitulo, .containertitulo2 {
   text-align: center;
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   color: #8B0000;
 }
-.containertitulo2 {
+.containertitulo.containertitulo2, .containertitulo2.containertitulo2 {
   color: #cf0f0f;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
 }
 
-/* Secciones flexibles */
 .flexsection {
   height: 400px;
   width: 100%;
@@ -124,18 +115,17 @@ footer {
   justify-content: center;
 }
 
-/* Carrusel */
 .carousel {
   flex: 2;
   width: 100%;
   max-width: 600px;
   overflow: hidden;
 }
-.carousel-inner img {
+.carousel .carousel-inner img {
   max-width: 100%;
   height: auto;
 }
-.carouselimg {
+.carousel .carouselimg {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -143,7 +133,6 @@ footer {
   justify-content: center;
 }
 
-/* Menú horizontal */
 .menuhori {
   list-style: none;
   padding: 0;
@@ -165,68 +154,62 @@ footer {
   background-color: #555;
 }
 
-/* Títulos */
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
   color: black;
 }
+
 h2 {
   text-decoration: underline;
   font-family: "Times New Roman", Times, serif;
   color: #8B0000;
 }
+
 section h3 {
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
   color: rgb(20, 31, 240);
 }
 
-/* Textos en div */
 div p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   color: #050505;
 }
 
-/* Barra de navegación personalizada */
 .custom-navbar, .navbar {
   background-color: #343a40;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
-.navbar .container-fluid, .navbar-collapse {
+.custom-navbar .container-fluid, .custom-navbar .navbar-collapse, .navbar .container-fluid, .navbar .navbar-collapse {
   display: flex;
   justify-content: center;
 }
-.navbar-nav {
+.custom-navbar .navbar-nav, .navbar .navbar-nav {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.navbar-nav .nav-item {
+.custom-navbar .navbar-nav .nav-item, .navbar .navbar-nav .nav-item {
   margin: 0 15px;
 }
-.navbar-brand {
-  color: #8B0000;
-  font-family: "Times New Roman", Times, serif;
-}
-.navbar-nav .nav-link {
+.custom-navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link {
   color: #8B0000;
   font-size: 16px;
 }
-.navbar-nav .nav-link.active {
+.custom-navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.active {
   color: #8B0000;
 }
-.navbar-toggler {
+.custom-navbar .navbar-toggler, .navbar .navbar-toggler {
   border-color: #8B0000;
 }
-.navbar-toggler-icon {
-  background-image: url('data:image/svg+xml,...');
+.custom-navbar .navbar-toggler .navbar-toggler-icon, .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
 }
 
-/* Contenedores flexibles */
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -234,6 +217,7 @@ div p {
   gap: 20px;
   padding: 20px;
 }
+
 .text-container {
   flex: 1;
   background-color: #f8f9fa;
@@ -243,13 +227,13 @@ div p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
 }
+
 iframe {
   width: 100%;
   height: 315px;
   border-radius: 8px;
 }
 
-/* Descripción de página */
 .descrip-page {
   background: rgba(255, 255, 255, 0.8);
   padding: 50px;
@@ -275,7 +259,6 @@ iframe {
   border-radius: 8px;
 }
 
-/* Cuadrícula */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
@@ -283,7 +266,6 @@ iframe {
   padding: 1rem;
 }
 
-/* Horarios */
 .horarios {
   width: 400px;
   border: 1px solid #ccc;
@@ -300,208 +282,78 @@ iframe {
   padding: 0;
   margin: 0;
 }
-
-.horarios li {
+.horarios ul li {
   margin-bottom: 8px;
 }
 
-/* Imagen redondeada */
 .image-container img {
   border-radius: 15px;
 }
 
-/* Estilos De Tarjeta */
 .card {
   width: 18rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   color: white;
-  background: linear-gradient(0deg, rgba(195,51,34,0.91) 0%, rgba(253,45,86,0.82) 100%);
+  background: linear-gradient(0deg, rgba(195, 51, 34, 0.91) 0%, rgba(253, 45, 86, 0.82) 100%);
 }
-
-.card-body {
+.card .card-body {
   padding: 15px;
 }
-
-.card-text {
+.card .card-text {
   margin-top: 10px;
   font-size: 16px;
 }
-
-.card-img-top {
+.card .card-img-top {
   width: 100%;
   height: auto;
 }
 
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos para el encabezado */
-header {
-    text-align: center;
-    padding: 10px;
-}
-
-header img {
-    max-width: 100px; /* Ajusta el tamaño del logo */
-}
-
-/* Navbar de Bootstrap */
-.navbar {
-    margin-bottom: 0px;
-}
-
-/* Estilos para el contenido principal */
-main {
-    padding: 0 15px;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-}
-
-/* Estilos para las secciones de texto y imagen */
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.text-container {
-    margin-bottom: 10px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-}
-
-/* Estilos para el pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
-/* Botón de WhatsApp */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding: 10px;
-    z-index: 1000;
-}
-
-.whatsapp-button img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.whatsapp-button:hover {
-  background-color: #128C7E;
-}
-/* Cambia la tipografía y el color de la paginación */
-.pagination .page-link {
-  font-family: 'Arial', sans-serif;
-  color: #8B0000;
-  background-color: #f8f8f8;
-  border: 1px solid #8B0000;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 25%;
-}
-
-.pagination .page-link:hover {
-  background-color: #8B0000;
-  color: white;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: #8B0000;
-  border-color: #8B0000;
-  color: white;
-}
-.btn-custom {
-  background-color: #cf0f0f;
-  color: rgb(12, 0, 0);
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.btn-custom:hover {
-  background-color: #8B0000; /* Color al pasar el mouse sobre el botón */
-}
-
-/* Estilos responsivos */
 @media (max-width: 700px) {
-    /* Ajusta el encabezado */
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    /* Ajusta la navbar */
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
-
-    /* Ajusta el tamaño de las imágenes en el carrusel */
-    .carousel-inner img {
-        height: auto;
-    }
-
-    /* Ajusta el diseño del contenido */
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .text-container, .image-container {
-        width: 100%;
-    }
-
-    /* Ajusta el pie de página */
-    footer {
-        font-size: 0.9em;
-    }
-
-    /* Ajusta el botón de WhatsApp */
-    .whatsapp-button {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
-        right: 15px;
-    }
-    .menuhori {
-      flex-direction: column;
-      text-align: center;
-    }
-    .menuhori li {
-      margin: 0;
-    }
-    .menuhori a {
-      padding: 15px;
-    }
-    .containertitulo {
-      font-size: 1.5em;
-    }
-    .containertext {
-      font-size: 1em;
-    }
+  header h1 {
+    font-size: 1.5em;
   }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .carousel-inner img {
+    height: auto;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .text-container, .image-container {
+    width: 100%;
+  }
+  footer {
+    font-size: 0.9em;
+  }
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .menuhori {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menuhori li {
+    margin: 0;
+  }
+  .menuhori a {
+    padding: 15px;
+  }
+  .containertitulo {
+    font-size: 1.5em;
+  }
+  .containertext {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
