@@ -5,8 +5,11 @@ $text-color-light: #fff;
 $text-color-dark: #050505;
 $hover-color: #555;
 $background-color-light: #f8f8f8;
+$Tipografia-1: "Times New Roman", Times, serif;
+
 
 @import "colores";
+
 
 // Estilos Generales
 body {
@@ -125,7 +128,7 @@ footer {
 .containertitulo, .containertitulo2 {
   text-align: center;
   font-size: 45px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: $Tipografia-1;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   color: $primary-color;
 
@@ -191,14 +194,14 @@ footer {
 
 // Títulos
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: $Tipografia-1;
   font-size: 50px;
   color: black;
 }
 
 h2 {
   text-decoration: underline;
-  font-family: "Times New Roman", Times, serif;
+  font-family: $Tipografia-1;
   color: $primary-color;
 }
 

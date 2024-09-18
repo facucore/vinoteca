@@ -1,6 +1,5 @@
-/* Estilos Generales */
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
@@ -17,7 +16,6 @@ header {
   padding: 10px;
   text-align: center;
 }
-
 header img {
   max-width: 100%;
   height: auto;
@@ -29,7 +27,6 @@ nav {
   padding: 1rem;
   text-align: center;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -37,11 +34,9 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-
 nav ul li {
   margin: 0 15px;
 }
-
 nav ul a {
   color: #fff;
   margin: 0 1rem;
@@ -53,7 +48,6 @@ nav ul a {
   place-items: center;
   height: 100vh;
 }
-
 .videoconta iframe {
   width: 400px;
   height: 400px;
@@ -61,7 +55,7 @@ nav ul a {
 
 #colorformulario {
   color: #8B0000;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.7);
   padding: 5px;
@@ -106,8 +100,11 @@ footer {
   text-align: center;
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   color: #8B0000;
+}
+.containertitulo.containertitulo2, .containertitulo2.containertitulo2 {
+  color: #cf0f0f;
 }
 
 .flexsection {
@@ -124,10 +121,16 @@ footer {
   max-width: 600px;
   overflow: hidden;
 }
-
 .carousel .carousel-inner img {
   max-width: 100%;
   height: auto;
+}
+.carousel .carouselimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .menuhori {
@@ -138,25 +141,158 @@ footer {
   justify-content: center;
   text-align: center;
 }
-
 .menuhori li {
   margin: 5px;
 }
-
 .menuhori a {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
   display: block;
 }
-
 .menuhori a:hover {
   background-color: #555;
 }
-.descrip-page {
-  padding: 15px;
-  font-size: 14px;
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
 }
+
+h2 {
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  color: #8B0000;
+}
+
+section h3 {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(20, 31, 240);
+}
+
+div p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: #050505;
+}
+
+.custom-navbar, .navbar {
+  background-color: #343a40;
+  font-family: "Arial", sans-serif;
+}
+.custom-navbar .container-fluid, .custom-navbar .navbar-collapse, .navbar .container-fluid, .navbar .navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+.custom-navbar .navbar-nav, .navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.custom-navbar .navbar-nav .nav-item, .navbar .navbar-nav .nav-item {
+  margin: 0 15px;
+}
+.custom-navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link {
+  color: #8B0000;
+  font-size: 16px;
+}
+.custom-navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.active {
+  color: #8B0000;
+}
+.custom-navbar .navbar-toggler, .navbar .navbar-toggler {
+  border-color: #8B0000;
+}
+.custom-navbar .navbar-toggler .navbar-toggler-icon, .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.text-container {
+  flex: 1;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 80%; /* Puedes ajustar el porcentaje o poner un ancho fijo */
+  margin: 0 auto;
+  text-align: justify; /* Opcional, para justificar el texto */
+}
+.bordecarro {
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel {
+  width: 80%; /* Ajusta este valor según necesites */
+  margin: 0 auto;
+}
+.image-container img {
+  border-radius: 15px;
+}
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 45%; /* Ajusta el porcentaje o usa un valor fijo, como '300px' */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Para evitar márgenes extras */
+  margin: 0 auto; 
+}
+iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+.descrip-page {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  font-weight: bold;
+  color: #080808;
+  position: relative;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+.descrip-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
 .horarios {
   width: 400px;
   border: 1px solid #ccc;
@@ -170,83 +306,17 @@ footer {
 }
 .horarios ul {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+}
+.horarios ul li {
+  margin-bottom: 8px;
 }
 
-.descrip-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: -1;
-  border-radius: 8px;
+.image-container img {
+  border-radius: 15px;
 }
-.descrip-page {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-weight: bold;
-  color: #080808;
-  position: relative;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 20px auto;
-  font-size: 16px;
-  border: 1px solid #0a0a0a;
-  font-family: "Times New Roman", Times, serif;
-}
-iframe {
-  width: 100%;
-  height: 315px;
-  border-radius: 8px;
-}
-.bordecarro {
-  background: rgba(162, 8, 8, 0.8);
-  padding: 50px;
-  font-weight: bold;
-  position: relative;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
-  background: linear-gradient(0deg, rgba(195, 51, 34, 0.91) 0%, rgba(253, 45, 86, 0.82) 100%);
-}
-.text-container {
-  flex: 1;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 60%; /* Ajusta el ancho del contenedor a lo que desees */
-  margin: 0 auto; /* Aplica márgenes automáticos para centrar */
-}
-.content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-.containertitulo, .containertitulo2 {
-  text-align: center;
-  font-size: 45px;
-  font-family: "Times New Roman", Times, serif;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-  color: #8B0000;
-}
+
 .card {
   width: 18rem;
   border-radius: 10px;
@@ -255,70 +325,17 @@ iframe {
   color: white;
   background: linear-gradient(0deg, rgba(195, 51, 34, 0.91) 0%, rgba(253, 45, 86, 0.82) 100%);
 }
-
 .card .card-body {
   padding: 15px;
 }
-
 .card .card-text {
   margin-top: 10px;
   font-size: 16px;
 }
-
 .card .card-img-top {
   width: 100%;
   height: auto;
 }
-
-/* Responsive Styles */
-@media (max-width: 700px) {
-  nav ul {
-    display: none;
-  }
-
-  nav .navbar-toggler {
-    display: block;
-    cursor: pointer;
-    background-color: #8B0000;
-    padding: 10px;
-    border: none;
-    color: #fff;
-  }
-
-  nav .navbar-toggler:hover {
-    background-color: #cf0f0f;
-  }
-
-  nav.active ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .videoconta iframe {
-    width: 300px;
-    height: 300px;
-  }
-
-  .flexsection {
-    flex-direction: column;
-  }
-
-  .carousel {
-    max-width: 100%;
-  }
-
-  .descrip-page, .bordecarro, .card {
-    max-width: 90%;
-    padding: 10px;
-  }
-
-  .containertitulo {
-    font-size: 35px;
-  }
-}
-
 /* botones contacto */
 .btn-custom {
   background-color: #8B0000;
@@ -335,4 +352,120 @@ iframe {
 .btn-custom:hover {
   background-color: #cf0f0f;
 }
+/* Menú Hamburguesa */
+.navbar-toggler {
+  display: block;
+}
 
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-toggler.collapsed ~ .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+}
+
+.navbar-collapse.show {
+  display: flex;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 10px 0;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px; /* Ajusta el tamaño de la fuente del menú */
+  padding: 8px;
+}
+
+.carousel {
+  max-width: 60%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+}
+
+.carousel .carousel-inner img {
+  max-width: 100%; /* Asegura que las imágenes se ajusten al contenedor */
+  height: auto;
+  border-radius: 10%;
+}
+/* Cambiar el color de fondo y el texto */
+.page-link {
+  background-color: #8B0000; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 50%; /* Hace los botones circulares */
+  padding: 8px 12px; /* Tamaño del botón */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px; /* Separación entre los botones */
+}
+
+/* Efecto hover: cuando el cursor pasa sobre el botón */
+.page-link:hover {
+  background-color: #cf0f0f;
+  color: rgb(16, 14, 14);
+}
+
+
+/* Personalizar los íconos de flecha */
+.page-link span {
+  font-size: 1.2em;
+}
+
+
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .carousel-inner img {
+    height: auto;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .text-container, .image-container {
+    width: 100%;
+  }
+  footer {
+    font-size: 0.9em;
+  }
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .menuhori {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menuhori li {
+    margin: 0;
+  }
+  .menuhori a {
+    padding: 15px;
+  }
+  .containertitulo {
+    font-size: 1.5em;
+  }
+  .containertext {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
