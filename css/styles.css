@@ -168,6 +168,11 @@ footer {
   text-align: center;
   margin: 0 auto;
 }
+.horarios ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .descrip-page::before {
   content: "";
   position: absolute;
