@@ -5,60 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinoteca Rindel</title>
     <link rel="shortcut icon" href="../imagenes/images.png" type="image/x-icon">
-            <!-- bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- mi css -->
+    <!-- Mi CSS -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header >
-            <!-- TITULO PAGINA -->
-            <p class="containertitulo2">VINOTECA RINDEL</p>
-            <!-- LOGO PRINCIPAL -->
-            <div>          
-                <img src="../imagenes/images.png" alt="logo" class="img1">
-            </div>
-            <!-- Navbar de Bootstrap -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Vinoteca Rindel</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <!-- TÍTULO PÁGINA -->
+        <p class="containertitulo2 text-center">VINOTECA RINDEL</p>
+        <!-- LOGO PRINCIPAL -->
+        <div class="text-center">
+            <img src="../imagenes/images.png" alt="Logo Vinoteca Rindel" class="img1">
+        </div>
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand conta" href="#">Vinoteca Rindel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./nuestrosvinos.html">Nuestros Vinos</a>
-                      </li>
-                      <li class="nav-item"></li>
-                        <a class="nav-link" href="./nuestraubicacion.html">Nuesta Ubicacion</a>
-                      </li>
-                      <li class="nav-item"></li>
-                        <a class="nav-link" href="./contacto.html">Nuestros Contacto</a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nuestrosvinos.html">Nuestros Vinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nuestraubicacion.html">Nuestra Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                  </div>
                 </div>
-              </nav>
-    </header>
-    <main>       
-        <!-- link googlemaps -->       
-        <section id="inicio">           
-            <h1 class="containertitulo">Nuestra Ubicacion</h1>
-            <div class="videoconta">
-                <iframe class="iframe-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.63663877518275!2d-58.53468334947719!3d-34.576510510387166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77386ef55f3%3A0x13a5a597b21b050a!2sVineria%20Los%20Colonos!5e0!3m2!1ses!2sar!4v1724264277616!5m2!1ses!2sar" width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="horarios">
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de ubicación con Google Maps -->
+        <section id="inicio" class="text-center mt-5">
+            <h1 class="containertitulo">Nuestra Ubicación</h1>
+
+            <div class="videoconta">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9953871268276!2d-58.43978238965909!3d-34.57898327285038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59383c966eb%3A0xfee902bd4fe71c57!2sBar%20du%20March%C3%A9!5e0!3m2!1ses-419!2sar!4v1726757102254!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Horarios de atención -->
+            <div class="horarios mt-4">
                 <h2>Días y Horarios de Atención</h2>
-                <ul>
+                <ul class="list-unstyled">
                     <li><small>Lunes: 9:00 AM - 6:00 PM</small></li>
                     <li><small>Martes: 9:00 AM - 6:00 PM</small></li>
                     <li><small>Miércoles: 9:00 AM - 6:00 PM</small></li>
@@ -66,20 +71,19 @@
                     <li><small>Viernes: 9:00 AM - 6:00 PM</small></li>
                     <li><small>Sábado: 10:00 AM - 4:00 PM</small></li>
                     <li><small>Domingo: Cerrado</small></li>
-                  </ul>                 
-            </div>           
-            </section>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer>
-                    <div>
-                        <img src="../imagenes/pngwing.com.png" alt="instagram" width="25" height="25 "><a href=" http://instagram.com" target="_blank">Instagram</a> 
-                        <p>
-                            &copy; 2024 Vinoteca Rindel
-                        </p>
-                    </div>           
+
+    <footer class="text-center mt-5">
+        <div>
+            <img src="../imagenes/pngwing.com.png" alt="Instagram" width="25" height="25">
+            <a>Instagram</a>
+            <p class="mt-3">
+                &copy; 2024 Vinoteca Rindel
+            </p>
+        </div>
     </footer>
-    
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
-  </body>
+</body>
 </html>
