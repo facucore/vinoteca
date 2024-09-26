@@ -1,8 +1,16 @@
+// Variables
+$primary-color: #8B0000;
+$secondary-color: #cf0f0f;
+$background-color: #f8f8f8;
+$font-family-sans: "Arial", sans-serif;
+$font-family-serif: "Times New Roman", Times, serif;
+
+// General styles
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", $font-family-sans;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: $background-color;
   background-image: url("../imagenes/fondogrisnegro.jpg");
   background-size: cover;
   background-position: center;
@@ -10,54 +18,63 @@ body {
   min-height: 100vh;
 }
 
+// Header
 header {
-  background: #8B0000;
+  background: $primary-color;
   color: #fff;
   padding: 10px;
   text-align: center;
-}
-header img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
 }
 
+// Navigation
 nav {
   background: #333;
   padding: 1rem;
   text-align: center;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        color: #fff;
+        margin: 0 1rem;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
+// Video Container
 .videoconta {
   display: grid;
   place-items: center;
   height: auto;
   max-width: 800px;
   margin: 0 auto;
-}
-.videoconta iframe {
-  width: 100%;
-  height: 450px;
+
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
 }
 
+// Form Color
 #colorformulario {
-  color: #8B0000;
-  font-family: "Arial", sans-serif;
+  color: $primary-color;
+  font-family: $font-family-sans;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.7);
   padding: 5px;
@@ -65,11 +82,13 @@ nav ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+// Main
 main {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
+// Sections
 .section {
   display: flex;
   align-items: center;
@@ -78,16 +97,18 @@ main {
   margin-bottom: 1rem;
 }
 
+// Footer
 footer {
   height: 80px;
   padding: 15px 30px;
   font-size: 16px;
   margin-top: 30px;
-  background-color: #8B0000;
+  background-color: $primary-color;
   color: #fff;
   text-align: center;
 }
 
+// Container Text and Titles
 .containertext {
   text-align: center;
   font-size: 25px;
@@ -101,14 +122,16 @@ footer {
 .containertitulo, .containertitulo2 {
   text-align: center;
   font-size: 45px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: $font-family-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  color: #8B0000;
-}
-.containertitulo.containertitulo2, .containertitulo2.containertitulo2 {
-  color: #cf0f0f;
+  color: $primary-color;
+
+  &.containertitulo2 {
+    color: $secondary-color;
+  }
 }
 
+// Flex Section
 .flexsection {
   height: 400px;
   width: 100%;
@@ -117,24 +140,28 @@ footer {
   justify-content: center;
 }
 
+// Carousel
 .carousel {
   flex: 2;
   width: 100%;
   max-width: 600px;
   overflow: hidden;
-}
-.carousel .carousel-inner img {
-  max-width: 100%;
-  height: auto;
-}
-.carousel .carouselimg {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
+
+  .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carouselimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
 }
 
+// Menu Horizontal
 .menuhori {
   list-style: none;
   padding: 0;
@@ -142,30 +169,34 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-}
-.menuhori li {
-  margin: 5px;
-}
-.menuhori li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-}
-.menuhori li a:hover {
-  background-color: #555;
+
+  li {
+    margin: 5px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
 }
 
+// Typography
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: $font-family-serif;
   font-size: 50px;
   color: black;
 }
 
 h2 {
   text-decoration: underline;
-  font-family: "Times New Roman", Times, serif;
-  color: #8B0000;
+  font-family: $font-family-serif;
+  color: $primary-color;
 }
 
 section h3 {
@@ -174,12 +205,14 @@ section h3 {
   color: rgb(20, 31, 240);
 }
 
+// Paragraphs
 div p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", "Arial", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", $font-family-sans;
   font-size: 20px;
   color: #050505;
 }
 
+// Content Wrapper
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -210,22 +243,25 @@ div p {
 
 .image-container {
   text-align: center;
-}
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  width: 45%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 15px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
 }
 
+// iframe
 iframe {
   width: 100%;
   height: 315px;
   border-radius: 8px;
 }
 
+// Description Page
 .descrip-page {
   background: rgba(255, 255, 255, 0.8);
   padding: 50px;
@@ -238,19 +274,21 @@ iframe {
   max-width: 800px;
   margin: 20px auto;
   font-size: 16px;
-}
-.descrip-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: -1;
-  border-radius: 8px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    border-radius: 8px;
+  }
 }
 
+// Grid
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
@@ -258,6 +296,7 @@ iframe {
   padding: 1rem;
 }
 
+// Horarios
 .horarios {
   width: 400px;
   border: 1px solid #ccc;
@@ -267,16 +306,19 @@ iframe {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 0 auto;
-}
-.horarios ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.horarios ul li {
-  margin-bottom: 8px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
 }
 
+// Cards
 .card {
   width: 18rem;
   border-radius: 10px;
@@ -284,36 +326,42 @@ iframe {
   overflow: hidden;
   color: white;
   background: linear-gradient(0deg, rgba(195, 51, 34, 0.91) 0%, rgba(253, 45, 86, 0.82) 100%);
-}
-.card .card-body {
-  padding: 15px;
-}
-.card .card-text {
-  margin-top: 10px;
-  font-size: 16px;
-}
-.card .card-img-top {
-  width: 100%;
-  height: auto;
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
 }
 
+// Contact Buttons
 .btn-custom {
-  background-color: #8B0000;
+  background-color: $primary-color;
   color: white;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-sans;
   font-size: 16px;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-.btn-custom:hover {
-  background-color: #cf0f0f;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
 }
 
+// Pagination Links
 .page-link {
-  background-color: #8B0000;
+  background-color: $primary-color;
   color: white;
   border-radius: 50%;
   padding: 8px 12px;
@@ -321,13 +369,13 @@ iframe {
   text-decoration: none;
   display: inline-block;
   margin: 2px;
-}
-.page-link:hover {
-  background-color: #cf0f0f;
-  color: rgb(16, 14, 14);
-}
-.page-link span {
-  font-size: 1.2em;
-}
 
-/*# sourceMappingURL=styles.css.map */
+  &:hover {
+    background-color: $secondary-color;
+    color: rgb(16, 14, 14);
+  }
+
+  span {
+    font-size: 1.2em;
+  }
+}
