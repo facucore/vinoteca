@@ -14,7 +14,7 @@
     <!-- Encabezado -->
     <header>
         <!-- TITULO PAGINA -->
-        <p class="containertitulo2">VINOTECA RINDEL</p>
+        <p class="tituloprinci">VINOTECA RINDEL</p>
         <!-- LOGO PRINCIPAL -->
         <div>
             <img src="./imagenes/images.png" alt="logo" class="img1">
@@ -53,7 +53,7 @@
     <main>
         <!-- Sección de bienvenida -->
         <section id="inicio">
-            <h1 class="containertitulo">Bienvenido a Vinoteca Rindel</h1>
+            <h1 class="titulosecun">Bienvenido a Vinoteca Rindel</h1>
             <p class="descrip-page"> Descubre nuestra exclusiva selección de vinos de las mejores bodegas del mundo. 
                 Desde vinos tintos robustos hasta blancos frescos y espumosos elegantes, tenemos algo para cada paladar. 
                 La Vinoteca Rindel es un espacio especializado que combina la pasión por el vino con un diseño elegante 
@@ -61,39 +61,41 @@
                 conservación gracias a su tecnología de control de temperatura y humedad. Cada botella es almacenada 
                 en condiciones óptimas, preservando sus propiedades y sabores únicos. Rindel no solo es un lugar 
                 para adquirir vinos de alta calidad, sino también un destino para amantes del vino que buscan una 
-                experiencia sensorial única, guiada por expertos en el arte del buen beber.</p>
+                experiencia sensorial única, guiada por expertos en el arte del buen beber.
+            </p>
+            <div class="imgcentra">
+                <img src="./imagenes/trabajadorviñedo.jpg" alt="viñedos">
+                <img src="./imagenes/trabajadorviñedo2.jpg" alt="">
+            </div>
+
         </section>
 
         <!-- Sección de video -->
-        <section class="section">
-            <div class="content-wrapper">
-                <div class="text-container">
-                    <p>Argentina es conocida por sus viñedos y su producción de vino de alta calidad.
-                        "Los viñedos argentinos están situados en regiones diversas, 
-                        desde las altas montañas de Mendoza hasta los valles frescos de Patagonia. 
-                        Mendoza es la región vitivinícola más destacada, famosa por sus Malbecs 
-                        robustos y sus excelentes vinos de Cabernet Sauvignon y Chardonnay. 
-                        Otras regiones importantes incluyen San Juan, con su producción de 
-                        vinos tempranillos y syrahs, y la Patagonia, que ofrece vinos frescos 
-                        y elegantes debido a su clima más frío. Los viñedos argentinos se benefician 
-                        de la altitud y la amplitud térmica, lo que contribuye a la calidad y singularidad de sus vinos."
-                    </p>
-                </div>
-
-                <!-- video YT -->
-
-                <section>
-                    <div class="videoconta">
-                        
-                      </div>  
-                </section>
-                        
-
-        </section>
-
+            <section class="ordenhori">
+                <div>
+                    <div class="descrip-page">
+                        <p>Argentina es conocida por sus viñedos y su producción de vino de alta calidad.
+                            "Los viñedos argentinos están situados en regiones diversas, 
+                            desde las altas montañas de Mendoza hasta los valles frescos de Patagonia. 
+                            Mendoza es la región vitivinícola más destacada, famosa por sus Malbecs 
+                            robustos y sus excelentes vinos de Cabernet Sauvignon y Chardonnay. 
+                            Otras regiones importantes incluyen San Juan, con su producción de 
+                            vinos tempranillos y syrahs, y la Patagonia, que ofrece vinos frescos 
+                            y elegantes debido a su clima más frío. Los viñedos argentinos se benefician 
+                            de la altitud y la amplitud térmica, lo que contribuye a la calidad y singularidad de sus vinos."
+                        </p>
+                    </div>
+    
+                    <!-- video YT -->
+                            <div>
+                                <iframe width="700" height="400" src="https://www.youtube.com/embed/_rx4ys2ehqM?si=39B4mAcmIX-FwdSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>  
+                </div>       
+            </section>
+                 
         <!-- Texto adicional -->
-        <div class="text-container">
-            <p>El viñedo de Mendoza, ubicado en la provincia de Mendoza, Argentina, 
+        <div>
+            <p class="descrip-page">El viñedo de Mendoza, ubicado en la provincia de Mendoza, Argentina, 
               es uno de los más importantes y reconocidos del país. Esta región vitivinícola, 
               situada al pie de los Andes, es conocida por su clima seco y soleado, así 
               como por sus suelos bien drenados, que son ideales para el cultivo de uvas.
@@ -109,37 +111,39 @@
               incluyendo alojamientos, restaurantes y actividades relacionadas con el vino.
             </p>
           </div>
-
         <!-- Carrusel de imágenes -->
-        <section class="section">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagenes/bodegaviñedo1.jpg" class="d-block w-100" alt="viñedo1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/bodegaviñedo2.jpg" class="d-block w-100" alt="viñedo2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/bodegaviñedo3.jpg" class="d-block w-100" alt="viñedo3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagenes/bodegaviñedo4.jpg" class="d-block w-100" alt="viñedo4">
-                    </div>
-                </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./imagenes/bodega1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./imagenes/bodega2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/bodega3.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
-
     <!-- Pie de página -->
     <footer>
         <div>
             <img src="./imagenes/pngwing.com.png" alt="instagram" width="25" height="25">
-            <a>Instagram</a>
+            <a href="https://www.instagram.com/tu_cuenta/" class="instagram-button" target="_blank">
+            <i class="fab fa-instagram"></i> Síguenos en Instagram
+            </a>
             <p>&copy; 2024 Vinoteca Rindel</p>             
         </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

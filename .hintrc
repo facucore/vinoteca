@@ -17,7 +17,8 @@
         "frame-title": "off"
       }
     ],
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "disown-opener": "off"
   },
   "browserslist": [
     "defaults",
