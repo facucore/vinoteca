@@ -23,7 +23,7 @@ body {
 header {
   background: $primary-color;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 
   img {
@@ -461,5 +461,41 @@ textarea.form-control {
 
   .centrahori .textalinea1 {
     margin-top: 10px;
+  }
+}
+// Media Query para pantallas con ancho de 700px o menos
+@media (max-width: 700px) {
+  main {
+    img, iframe {
+      width: 100%;
+      height: auto;
+      max-width: 100%; // Para asegurarte que no excedan el ancho del contenedor
+    }
+  }
+}
+// Estilos para imágenes y videos responsivos dentro de la etiqueta main
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  img, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; // Centrar
+  }
+}
+
+// Media Query para pantallas con ancho de 700px o menos
+@media (max-width: 700px) {
+  main {
+    padding: 10px; // Para ajustar el espaciado en pantallas pequeñas
+    
+    img, iframe {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
