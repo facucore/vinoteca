@@ -388,4 +388,27 @@ textarea.form-control:focus {
   margin: 5px 0;
 }
 
+@media (max-width: 700px) {
+  .centrahori {
+    flex-direction: column;
+    align-items: center;
+  }
+  .centrahori div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .centrahori .textalinea1 {
+    margin-bottom: 10px;
+  }
+  .centrahori .imag1 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .image-container img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

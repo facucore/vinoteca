@@ -437,3 +437,32 @@ textarea.form-control {
     margin: 5px 0;
   }
 }
+// Media Query para pantallas con ancho de 700px o menos
+@media (max-width: 700px) {
+  .centrahori {
+    flex-direction: column; // Cambia la dirección a columna
+    align-items: center; // Centra los elementos en el contenedor
+  }
+
+  .centrahori div {
+    flex-direction: column; // Cambia la dirección a columna para el contenedor de texto e imagen
+    align-items: center; // Centra los elementos
+  }
+
+  .centrahori .textalinea1 {
+    margin-bottom: 10px; // Espacio entre el texto y la imagen
+  }
+
+  .centrahori .imag1 {
+    img {
+      width: 100%; // Asegura que la imagen ocupe el 100% del contenedor
+      max-width: 300px; // Puedes ajustar el ancho máximo si es necesario
+      height: auto; // Mantiene la relación de aspecto
+    }
+  }
+
+  .image-container img {
+    width: 100%; // Asegura que las imágenes se ajusten al contenedor
+    max-width: 300px; // Ajusta según sea necesario
+  }
+}
