@@ -315,22 +315,22 @@ footer {
     margin: 0;
 
     li {
-      display: flex; // Habilita flexbox
-      justify-content: center; // Centra horizontalmente
-      align-items: center; // Centra verticalmente
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 10px;
 
       small {
-        display: flex; // Cambiar a flex para que tome el ancho
-        justify-content: center; // Centra el texto en el recuadro
-        align-items: center; // Centra verticalmente el texto
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px 15px;
         border: 1px solid #cf0f0f;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0.8);
-        width: 100%; // Asegura que el small ocupe todo el ancho disponible
-        max-width: 250px; // Puedes establecer un ancho máximo si es necesario
+        width: 100%;
+        max-width: 250px;
       }
     }
   }
@@ -371,13 +371,13 @@ textarea.form-control {
 
 // Estilo para el botón sin cambios
 .btn-custom {
-  background-color: #cf0f0f; // Color de fondo
-  color: #100f0f; // Color del texto
+  background-color: #cf0f0f;
+  color: #100f0f;
   border: none;
   border-radius: 25px;
-  padding: 10px 20px; // Espacio interno: arriba/abajo y izquierda/derecha
-  font-size: 16px; // Tamaño de fuente
-  font-family: 'Arial', sans-serif; // Tipografía
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 
@@ -437,32 +437,29 @@ textarea.form-control {
     margin: 5px 0;
   }
 }
-// Estilos generales
-// ... [tu código SCSS existente] ...
-
 // Media Query para pantallas con ancho de 700px o menos
 @media (max-width: 700px) {
   .centrahori {
-    flex-direction: column; // Cambia la dirección a columna para apilar los elementos
-    align-items: center; // Centra los elementos en el contenedor
+    flex-direction: column;
+    align-items: center;
   }
 
   .centrahori div {
     display: flex;
-    flex-direction: column; // Cambia la dirección a columna para cada grupo de texto e imagen
-    align-items: center; // Centra los elementos
-    margin-bottom: 20px; // Espacio entre cada sección de uva
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   .centrahori .imag1 {
     img {
-      width: 100%; // Asegura que la imagen ocupe el 100% del contenedor
-      max-width: 300px; // Ajusta el ancho máximo si es necesario
-      height: auto; // Mantiene la relación de aspecto
+      width: 100%;
+      max-width: 300px;
+      height: auto;
     }
   }
 
   .centrahori .textalinea1 {
-    margin-top: 10px; // Espacio entre la imagen y el texto
+    margin-top: 10px;
   }
 }
