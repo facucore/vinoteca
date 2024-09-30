@@ -280,15 +280,22 @@ footer {
   margin: 0;
 }
 .Horarios ul.list-unstyled li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
 .Horarios ul.list-unstyled li small {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 15px;
   border: 1px solid #cf0f0f;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  max-width: 250px;
 }
 
 form.container {
