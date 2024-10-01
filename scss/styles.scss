@@ -372,19 +372,19 @@ footer {
 
   // Media Query para pantallas de 768px o menos
   @media (max-width: 768px) {
-    flex-direction: column; // Cambia el layout del navbar a vertical
-    align-items: flex-start; // Alinea el contenido al inicio
+    flex-direction: column;
+    align-items: flex-start;
 
     .navbar-nav {
-      flex-direction: column; // Cambia los items del menú a vertical
-      width: 100%; // Asegura que ocupe todo el ancho
+      flex-direction: column;
+      width: 100%;
       margin-top: 10px;
 
       .nav-item {
-        margin: 10px 0; // Espaciado entre los items en el menú vertical
+        margin: 10px 0;
 
         .nav-link {
-          text-align: left; // Alinea el texto a la izquierda
+          text-align: left;
         }
       }
     }
@@ -542,41 +542,32 @@ textarea.form-control {
     height: auto;
   }
 }
-// Estilo para el botón de WhatsApp
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  .carousel-inner {
+    // Asegura que las imágenes ocupen el 100% del ancho
+    .carousel-item {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 
-  // Efecto hover
-  &:hover {
-    background-color: #128C7E;
-  }
-
-  // Media query para pantallas de 768px o menos
+  // Media Query para pantallas de 768px o menos
   @media (max-width: 768px) {
-    width: 50px;
-    height: 50px;
-    bottom: 10px;
-    right: 10px;
-    
-    img {
-      width: 100%;
+    // Ajusta el tamaño de las imágenes o cualquier estilo adicional que necesites
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 400px;
+          object-fit: cover;
+        }
+      }
     }
   }
 }
