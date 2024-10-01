@@ -113,15 +113,15 @@ footer {
   }
 }
 .video-container {
-    display: flex; // Utiliza flexbox para centrar
-    justify-content: center; // Centra horizontalmente
-    align-items: center; // Centra verticalmente (opcional)
-    width: 100%; // O ajusta a la anchura deseada del contenedor
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     iframe {
-        width: 500px; // Establece el ancho del iframe
-        height: 500px; // Establece la altura del iframe
-        border: none; // Elimina el borde, si es necesario
+        width: 500px;
+        height: 500px;
+        border: none;
     }
 }
 
