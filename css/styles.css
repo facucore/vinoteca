@@ -52,12 +52,33 @@ main {
   flex: 1;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main img,
+main iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  main {
+    padding: 10px;
+  }
+  main img,
+  main iframe {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 footer {
   background-color: #8B0000;
   color: #fff;
-  padding: 0px;
+  padding: 0;
   text-align: center;
   font-size: 10px;
   width: 100%;
@@ -115,7 +136,9 @@ footer {
   font-size: 16px;
 }
 
-.containertext, .containertitulo, .containertitulo2 {
+.containertext,
+.containertitulo,
+.containertitulo2 {
   text-align: center;
   margin: 10px 0;
 }
@@ -178,19 +201,40 @@ footer {
   object-fit: cover;
   border: 2px solid #ccc;
 }
+@media (max-width: 700px) {
+  .centrahori {
+    flex-direction: column;
+    align-items: center;
+  }
+  .centrahori div {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .centrahori .imag1 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .centrahori .textalinea1 {
+    margin-top: 10px;
+  }
+}
+
+.tituloprinci,
+.titulosecun {
+  font-family: "Times New Roman", Times, serif;
+  color: #cf0f0f;
+  text-align: center;
+}
 
 .tituloprinci {
-  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  color: #cf0f0f;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 .titulosecun {
-  font-family: "Times New Roman", Times, serif;
   font-size: 40px;
-  color: #cf0f0f;
-  text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   text-decoration: underline;
@@ -221,7 +265,7 @@ footer {
 .imgcentra {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin: 20px 0;
 }
 .imgcentra img {
@@ -236,7 +280,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -267,12 +310,27 @@ footer {
   font-size: 18px;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #cf0f0f;
   text-decoration: underline;
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
   font-weight: bold;
-  color: #cf0f0f;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    text-align: left;
+  }
 }
 
 .Horarios ul.list-unstyled {
@@ -388,54 +446,21 @@ textarea.form-control:focus {
   margin: 5px 0;
 }
 
-@media (max-width: 700px) {
-  .centrahori {
-    flex-direction: column;
-    align-items: center;
-  }
-  .centrahori div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .centrahori .imag1 img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  .centrahori .textalinea1 {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 700px) {
-  main img, main iframe {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-}
-main {
+.imgcentra {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  gap: 10px;
 }
-main img, main iframe {
-  max-width: 100%;
+@media screen and (max-width: 768px) {
+  .imgcentra {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.imgcentra img {
+  max-width: 45%;
   height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-@media (max-width: 700px) {
-  main {
-    padding: 10px;
-  }
-  main img, main iframe {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
